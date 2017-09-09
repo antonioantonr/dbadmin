@@ -47,7 +47,7 @@ left outer join gv$sql sq on (ses.sql_id = sq.sql_id and sq.inst_id = ses.inst_i
 ,gv$process p
 where p.addr = ses.paddr
 and p.inst_id = ses.inst_id
-and ses.type <> 'BACKGROUND' -- Esta SI
+--and ses.type <> 'BACKGROUND' -- Esta SI
 --and ses.username is not null
 --and ses.sid||','||ses.serial#||',@'||ses.inst_id = '329,17636,@2'
 --and p.spid = '24791'
